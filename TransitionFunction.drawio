@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-01T17:28:13.869Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="suDW1DnZBNP7Gf62S7wD" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-01T22:32:47.462Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0" etag="dh2FTvInuKTERKw8nWYF" version="24.2.1" type="github">
   <diagram name="Page-1" id="vDo7KrHqP6fmfLN8yKtp">
     <mxGraphModel dx="1434" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -36,6 +36,54 @@
         </mxCell>
         <mxCell id="i3sueJDCuvwV_Vw11DY2-16" value="&lt;div&gt;load_def(in definition_file_name: string)&lt;/div&gt;&lt;div&gt;view_def()&lt;/div&gt;&lt;div&gt;view_instant_desc(in max_cells: integer)&lt;/div&gt;&lt;div&gt;run_transitions(in max_transitions: integer)&lt;/div&gt;&lt;div&gt;terminate_operation()&lt;/div&gt;&lt;div&gt;input_string(): string&lt;/div&gt;&lt;div&gt;transitions_performed(): integer&lt;/div&gt;&lt;div&gt;valid_def(): bool&lt;/div&gt;&lt;div&gt;valid_in_string(in value: string): bool&lt;/div&gt;&lt;div&gt;used(): boolean&lt;/div&gt;&lt;div&gt;operating(): boolean&lt;/div&gt;&lt;div&gt;accepted_in_string(): boolean&lt;/div&gt;&lt;div&gt;rejected_in_string(): boolean&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-13">
           <mxGeometry y="188" width="260" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-17" value="Tape" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="490" width="260" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-18" value="&lt;div&gt;cells: string = &quot; &quot;&lt;/div&gt;&lt;div&gt;current_cell: integer = 0&lt;/div&gt;&lt;div&gt;blank_char: charater = &#39; &#39;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-17">
+          <mxGeometry y="26" width="260" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-17">
+          <mxGeometry y="90" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-20" value="&lt;div&gt;load(inout definition: file, inout valid: boolean)&lt;/div&gt;&lt;div&gt;validate(inout valid: boolean)&lt;/div&gt;&lt;div&gt;view()&lt;/div&gt;&lt;div&gt;initialize(in input_string: string)&lt;/div&gt;&lt;div&gt;update(in write_dhar: character,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;in move_direction: direction)&lt;/div&gt;&lt;div&gt;lef(in max_num_cells: integer): string&lt;/div&gt;&lt;div&gt;right(in max_num_cells: integer): string&lt;/div&gt;&lt;div&gt;current_character(): character&lt;/div&gt;&lt;div&gt;is_first_cell(): boolean&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-17">
+          <mxGeometry y="98" width="260" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-21" value="Input_Alphabet" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="770" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-22" value="alphabet: character_vector = {}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-21">
+          <mxGeometry y="26" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-21">
+          <mxGeometry y="50" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-24" value="&lt;div&gt;load(inout definition: file, inout valid: boolean)&lt;/div&gt;&lt;div&gt;validate(inout valid: boolean)&lt;/div&gt;&lt;div&gt;view()&lt;/div&gt;&lt;div&gt;is_element(in value: character): boolean&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-21">
+          <mxGeometry y="58" width="260" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-25" value="Tape_Alphabet" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="910" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-26" value="alphabet: character_vector = {}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-25">
+          <mxGeometry y="26" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-25">
+          <mxGeometry y="50" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-28" value="&lt;div&gt;load(inout definition: file, inout valid: boolean)&lt;/div&gt;&lt;div&gt;view()&lt;/div&gt;&lt;div&gt;is_element(in value: character): boolean&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-25">
+          <mxGeometry y="58" width="260" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-29" value="States" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="910" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-30" value="names: string_vector = {}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-29">
+          <mxGeometry y="26" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-29">
+          <mxGeometry y="50" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="i3sueJDCuvwV_Vw11DY2-32" value="&lt;div&gt;load(inout definition: file, inout valid: boolean)&lt;/div&gt;&lt;div&gt;view()&lt;/div&gt;&lt;div&gt;is_element(in value: string): boolean&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="i3sueJDCuvwV_Vw11DY2-29">
+          <mxGeometry y="58" width="260" height="52" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
